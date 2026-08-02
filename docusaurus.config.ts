@@ -100,8 +100,20 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "ADRs",
+              to: "/docs/adrs",
+            },
+            {
+              label: "APIs",
+              to: "/docs/apis",
+            },
+            {
+              label: "Guias",
+              to: "/docs/guides",
+            },
+            {
+              label: "Requisitos",
+              to: "/docs/requirements",
             },
           ],
         },
