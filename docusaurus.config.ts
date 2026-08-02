@@ -105,7 +105,7 @@ const config: Config = {
             },
             {
               label: "APIs",
-              to: "/docs/apis",
+              to: "/docs/api",
             },
             {
               label: "Guias",
