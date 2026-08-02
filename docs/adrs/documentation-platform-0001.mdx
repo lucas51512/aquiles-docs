@@ -1,0 +1,238 @@
+
+# 0001 - Plataforma de Documentação
+
+- **Status:** Em análise
+- **Data:** 2026-08-01
+- **Autor:** Lucas Barbosa Brancalhão
+
+---
+
+# Contexto
+
+A documentação é um dos pilares do projeto e será utilizada para registrar:
+
+- Arquitetura
+- Requisitos
+- ADRs
+- Guias de desenvolvimento
+- Diagramas
+- API
+- Roadmap
+- Decisões técnicas
+
+Como o projeto será desenvolvido por mais de uma pessoa, é necessário escolher uma plataforma que facilite a colaboração, seja de baixo custo (preferencialmente gratuita) e permita crescimento ao longo do projeto.
+
+---
+
+# Critérios de decisão
+
+Os seguintes critérios serão considerados:
+
+- Gratuita ou com plano gratuito suficiente
+- Facilidade de colaboração
+- Versionamento
+- Integração com Git
+- Facilidade de hospedagem
+- Facilidade de manutenção
+- Boa experiência de leitura
+- Suporte a Markdown
+- Possibilidade de documentação como código (Docs as Code)
+- Facilidade para adicionar diagramas e exemplos de código
+
+---
+
+# Alternativas avaliadas
+
+## Microsoft Word
+
+### Vantagens
+
+- Muito simples
+- Conhecido por todos
+- Não exige configuração
+
+### Desvantagens
+
+- Não possui versionamento adequado
+- Difícil colaboração simultânea
+- Pouca integração com o desenvolvimento
+- Difícil organizar documentos grandes
+- Não permite automação
+
+### Avaliação
+
+Adequado apenas para documentação inicial ou rascunhos.
+
+---
+
+## GitBook
+
+### Vantagens
+
+- Excelente interface
+- Markdown
+- Busca
+- Navegação intuitiva
+- Muito utilizado pela comunidade
+
+### Desvantagens
+
+- Limitações no plano gratuito
+- Colaboração paga
+- Dependência de serviço externo
+
+### Avaliação
+
+Excelente experiência de uso, porém o custo para colaboração torna a solução menos atrativa.
+
+---
+
+## Docusaurus
+
+### Vantagens
+
+- Open Source
+- Gratuito
+- Documentação como código
+- Markdown
+- Versionamento
+- Excelente experiência de leitura
+- Componentes React
+- Fácil hospedagem
+- Grande comunidade
+
+### Desvantagens
+
+- Não possui edição colaborativa online
+- Requer conhecimento básico de Git
+
+### Avaliação
+
+Uma das principais candidatas.
+
+---
+
+## MkDocs + Material
+
+### Vantagens
+
+- Open Source
+- Muito leve
+- Excelente aparência
+- Markdown
+- Busca integrada
+- Fácil publicação
+
+### Desvantagens
+
+- Menos extensível que o Docusaurus
+- Ecossistema menor
+
+### Avaliação
+
+Excelente alternativa para documentação estática.
+
+---
+
+## Notion
+
+### Vantagens
+
+- Excelente experiência de edição
+- Colaboração em tempo real
+- Muito fácil de usar
+
+### Desvantagens
+
+- Não é documentação como código
+- Pouca integração com Git
+- Dependência da plataforma
+- Plano gratuito limitado para mais de uma pessoa
+
+### Avaliação
+
+Boa ferramenta para documentação interna, porém menos adequada para documentação técnica do projeto.
+
+---
+
+## Confluence
+
+### Vantagens
+
+- Colaboração
+- Histórico
+- Permissões
+- Muito utilizado em empresas
+
+### Desvantagens
+
+- Interface mais pesada
+- Dependência da Atlassian
+- Menor integração com Git
+
+### Avaliação
+
+Boa opção para documentação corporativa.
+
+---
+
+## Gitea Wiki
+
+### Vantagens
+
+- Integrada ao repositório
+- Simples
+- Gratuita
+- Versionada
+
+### Desvantagens
+
+- Interface simples
+- Poucos recursos de documentação
+- Não ideal para documentação extensa
+
+### Avaliação
+
+Adequada para documentação complementar.
+
+---
+
+# Comparação
+
+| Plataforma | Gratuita | Docs as Code | Git | Colaboração | Hospedagem própria |
+|------------|-----------|--------------|-----|-------------|--------------------|
+| Word | Sim | Não | Não | Limitada | Não |
+| GitBook | Parcial | Sim | Sim | Parcial | Não |
+| Docusaurus | Sim | Sim | Sim | Via Git | Sim |
+| MkDocs | Sim | Sim | Sim | Via Git | Sim |
+| Notion | Sim | Não | Não | Excelente | Não |
+| Confluence | Parcial | Não | Não | Excelente | Não |
+| Gitea Wiki | Sim | Parcial | Sim | Via Git | Sim |
+
+---
+
+# Decisão
+
+**Ainda não definida.**
+
+As três principais candidatas são:
+
+- Docusaurus
+- MkDocs Material
+- Word
+
+A decisão final dependerá da experiência da equipe durante a fase inicial do projeto.
+
+---
+
+# Consequências
+
+Caso Docusaurus seja adotado:
+
+- Toda documentação será armazenada no repositório Git.
+- Alterações seguirão o fluxo de Pull Request.
+- A documentação poderá ser publicada automaticamente via CI/CD.
+- Será possível evoluir a documentação junto com o código-fonte.
+
+Caso outra solução seja escolhida, esta ADR deverá ser atualizada.
+

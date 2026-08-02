@@ -1,0 +1,53 @@
+---
+title: Architecture Decision Records (ADRs)
+sidebar_position: 1
+---
+
+# Architecture Decision Records (ADRs)
+
+Esta seção reúne todas as **Architecture Decision Records (ADRs)** do projeto.
+
+Uma ADR é um documento que registra uma decisão arquitetural importante, incluindo o contexto em que ela foi tomada, as alternativas consideradas, a decisão escolhida e suas consequências.
+
+O objetivo é preservar o histórico das decisões técnicas, facilitando a compreensão da arquitetura e evitando que escolhas importantes precisem ser rediscutidas sem contexto.
+
+## Estrutura de uma ADR
+
+Cada ADR segue uma estrutura semelhante:
+
+- **Status** — Situação atual da decisão (Proposta, Em análise, Aceita, Substituída, Obsoleta).
+- **Contexto** — Problema ou necessidade que motivou a decisão.
+- **Critérios de decisão** — Aspectos considerados durante a avaliação.
+- **Alternativas** — Soluções avaliadas.
+- **Decisão** — Opção escolhida.
+- **Consequências** — Impactos positivos e negativos da decisão.
+
+## Convenção de nomenclatura
+
+As ADRs são numeradas sequencialmente para preservar o histórico do projeto.
+
+Exemplo:
+
+```
+0001-documentation-platform
+0002-backend-framework
+0003-database
+0004-authentication
+```
+
+O número nunca deve ser reutilizado, mesmo que uma ADR seja substituída posteriormente.
+
+## Status possíveis
+
+| Status | Descrição |
+|---------|-----------|
+| 🟡 Em análise | A decisão ainda está sendo discutida. |
+| 🟢 Aceita | A decisão foi aprovada e deve ser seguida. |
+| 🔵 Substituída | Foi substituída por uma ADR mais recente. |
+| 🔴 Obsoleta | Não é mais aplicável ao projeto. |
+
+## ADRs
+
+- [ADR-0001 — Escolha da Plataforma de Documentação](documentation-platform-0001)
+
+Novas ADRs serão adicionadas conforme decisões arquiteturais relevantes forem sendo tomadas durante o desenvolvimento do projeto.
